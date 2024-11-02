@@ -41,7 +41,7 @@ export default function About() {
         <span className="italic">playing football, enjoying video games</span>,
         learning something new and interesting, and exploring{" "}
         <span className="font-medium">technologies and creative projects</span>.
-        I’m seeking a <span className="font-medium">internship</span> to gain
+        I’m seeking an <span className="font-medium">internship</span> to gain
         industry experience and make meaningful contributions to a team.{" "}
       </p>
     </motion.section>
