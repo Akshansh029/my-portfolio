@@ -50,7 +50,7 @@ export default function About() {
         <span className="font-medium">
           Electrical and Electronics Engineering student
         </span>{" "}
-        at VIT Chennai with a strong interest in{" "}
+        with a strong interest in{" "}
         <span className="font-medium">web development</span> and{" "}
         <span className="font-medium">software engineering</span>. Over the past
         two years, I’ve built several projects, gaining proficiency in{" "}
