@@ -62,25 +62,31 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Travelite",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Travelite is an AI-driven platform that customizes trip planning and suggests new itineraries based on users' past travel preferences.",
+    tags: ["Next.js", "Tailwind", "Firebase", "Gemini API", "Python"],
+    imageUrl: "/travelite.png",
+    width: 500,
+    height: 300,
   },
   {
-    title: "rmtDev",
+    title: "Budgeteer",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Budgeteer is a user-friendly budget tracking app with income and expense tracking, multi-currency support, and light/dark mode.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Node.js", "Prisma"],
+    imageUrl: "/budgeteer.png",
+    width: 500,
+    height: 300,
   },
   {
-    title: "Word Analytics",
+    title: "Stockhive",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "An inventory management app that tracks products and showcases analytics through an intuitive admin dashboard for efficient stock control.",
+    tags: ["Next.js", "Tailwind", "Redux", "PostgreSQl", "Node.js"],
+    imageUrl: "/stockhive.png",
+    width: 500,
+    height: 300,
   },
 ] as const;
 
