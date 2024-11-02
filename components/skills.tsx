@@ -20,6 +20,20 @@ const fadeInAnimationVariants = {
   }),
 };
 
+const brightColors = [
+  "#FF5733",
+  "#FFC300",
+  "#FF33F6",
+  "#33FFBD",
+  "#3385FF",
+  "#FF5733",
+  "#DAF7A6",
+];
+
+function getRandomColor() {
+  return brightColors[Math.floor(Math.random() * brightColors.length)];
+}
+
 export default function Skills() {
   const { ref } = useSectionInView("Skills");
 
@@ -33,7 +47,7 @@ export default function Skills() {
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="bg-white border border-slate-300 rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
