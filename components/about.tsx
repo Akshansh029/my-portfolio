@@ -18,7 +18,7 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
+      {/* <p className="mb-3">
         After graduating with a degree in{" "}
         <span className="font-medium">Accounting</span>, I decided to pursue my
         passion for programming. I enrolled in a coding bootcamp and learned{" "}
@@ -43,6 +43,34 @@ export default function About() {
         learning about{" "}
         <span className="font-medium">history and philosophy</span>. I'm also
         learning how to play the guitar.
+      </p> */}
+      <p className="mb-3">
+        {" "}
+        I am a third-year{" "}
+        <span className="font-medium">
+          Electrical and Electronics Engineering student
+        </span>{" "}
+        at VIT Chennai with a strong interest in{" "}
+        <span className="font-medium">web development</span> and{" "}
+        <span className="font-medium">software engineering</span>. Over the past
+        two years, I’ve built several projects, gaining proficiency in{" "}
+        <span className="font-medium">
+          React, Next.js, TailwindCSS, Firebase, and MongoDB
+        </span>
+        . Currently, I’m deepening my knowledge in{" "}
+        <span className="font-medium">Data Structures and Algorithms</span>{" "}
+        through LeetCode.{" "}
+      </p>{" "}
+      <p>
+        {" "}
+        Outside of coding, I enjoy{" "}
+        <span className="italic">playing football, enjoying video games</span>,
+        visiting fun spots in Chennai with friends, and exploring{" "}
+        <span className="font-medium">
+          new technologies and creative projects
+        </span>
+        . I’m seeking a <span className="font-medium">internship</span> to gain
+        industry experience and make meaningful contributions to a team.{" "}
       </p>
     </motion.section>
   );
