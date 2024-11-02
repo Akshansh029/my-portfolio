@@ -35,30 +35,38 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Completed Web Development Bootcamp",
+    location: "Online",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Graduated from an intensive program focused on full-stack web development, mastering technologies like React and Node.js.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Developed 'LinkUp' Chat Application",
+    location: "Personal Project",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Built a real-time messaging app using React, Firebase, and Zustand, featuring user authentication and image sharing.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023",
   },
-] as const;
+  {
+    title: "Created 'Budgeteer' Budget Tracker",
+    location: "Personal Project",
+    description:
+      "Developed a full-stack budget tracking application with Next.js, TypeScript, and Tailwind CSS, featuring data visualization.",
+    icon: React.createElement(FaReact),
+    date: "2023",
+  },
+  {
+    title: "Ongoing Web Development Projects",
+    location: "Various Locations",
+    description:
+      "Currently working on multiple projects, enhancing skills in Next.js, Firebase, and API integrations while exploring AI.",
+    icon: React.createElement(FaReact),
+    date: "2023 - Present",
+  },
+];
 
 export const projectsData = [
   {
