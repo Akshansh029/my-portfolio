@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { CSSProperties } from "react";
 import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
@@ -26,7 +26,6 @@ const brightColors = [
   "#FF33F6",
   "#33FFBD",
   "#3385FF",
-  "#FF5733",
   "#DAF7A6",
 ];
 
@@ -47,17 +46,16 @@ export default function Skills() {
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white border border-slate-300 rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="skill-item bg-white border border-slate-300 rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={index}
+            style={{ "--underline-color": getRandomColor() } as CSSProperties}
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{
-              once: true,
-            }}
+            viewport={{ once: true }}
             custom={index}
           >
-            {skill}
+            <span className="skill-text">{skill}</span>
           </motion.li>
         ))}
       </ul>
