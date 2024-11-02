@@ -63,3 +63,25 @@ html.dark {
 .skill-item:hover .skill-text::after {
   transform: scaleX(1);
 }
+
+/* Scrollbar container */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track or background */
+::-webkit-scrollbar-track {
+  background: #dedede;
+  border-radius: 10px;
+}
+
+/* Handle or thumb */
+::-webkit-scrollbar-thumb {
+  background: #75b3ff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4297fe;
+}
