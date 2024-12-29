@@ -38,6 +38,7 @@ export default function Header() {
                 )}
                 href={link.hash}
                 onClick={() => {
+                  console.log(link.name);
                   setActiveSection(link.name);
                   setTimeOfLastClick(Date.now());
                 }}

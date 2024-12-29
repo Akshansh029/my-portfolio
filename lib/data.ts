@@ -1,8 +1,7 @@
 import React from "react";
-import { FaReact } from "react-icons/fa";
-import { IoChatboxEllipsesOutline } from "react-icons/io5";
+import { FaBriefcase, FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import { TbPigMoney } from "react-icons/tb";
+import { TbBrandFigma } from "react-icons/tb";
 
 export const links = [
   {
@@ -33,28 +32,28 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Software Engineering Internship",
+    location: "Remote",
+    description:
+      "Completed a Vue.js simulation, drafted technical requirements, and aligned solutions with business needs at GE Aerospace.",
+    icon: React.createElement(FaBriefcase),
+    date: "December 2024",
+  },
+  {
+    title: "UI/UX Designer at IEEE CompSoc",
+    location: "VIT Chennai",
+    description:
+      "Designed and developed user interfaces for IEEE Comsoc's web platforms, improving user experience and engagement.",
+    icon: React.createElement(TbBrandFigma),
+    date: "May 2023 - Present",
+  },
+  {
     title: "Completed Web Development Bootcamp",
     location: "Online",
     description:
       "Graduated from an intensive program focused on full-stack web development, mastering technologies like React and Node.js.",
     icon: React.createElement(LuGraduationCap),
-    date: "2023",
-  },
-  {
-    title: "Developed 'LinkUp' Chat Application",
-    location: "Personal Project",
-    description:
-      "Built a real-time messaging app using React, Firebase, and Zustand, featuring user authentication and image sharing.",
-    icon: React.createElement(IoChatboxEllipsesOutline),
-    date: "2023",
-  },
-  {
-    title: "Created 'Budgeteer' Budget Tracker",
-    location: "Personal Project",
-    description:
-      "Developed a full-stack budget tracking application with Next.js, TypeScript, and Tailwind CSS, featuring data visualization.",
-    icon: React.createElement(TbPigMoney),
-    date: "2023",
+    date: "June 2023",
   },
   {
     title: "Ongoing Web Development Projects",
@@ -62,7 +61,7 @@ export const experiencesData = [
     description:
       "Currently working on multiple projects, enhancing skills in Next.js, Firebase, and API integrations while exploring AI.",
     icon: React.createElement(FaReact),
-    date: "2023 - Present",
+    date: "2024",
   },
 ];
 
@@ -86,11 +85,11 @@ export const projectsData = [
     height: 300,
   },
   {
-    title: "Stockhive",
+    title: "CodeChime",
     description:
-      "An inventory management app that tracks products and showcases analytics through an intuitive admin dashboard for efficient stock control.",
-    tags: ["Next.js", "Tailwind", "Redux", "PostgreSQl", "Node.js"],
-    imageUrl: "/stockhive.png",
+      "A real-time code editor enabling seamless collaboration, where multiple users can edit together, see live updates instantly, and work efficiently in sync.",
+    tags: ["React", "Tailwind", "Socket.io", "Express.js", "Codemirror"],
+    imageUrl: "/codechime.png",
     width: 500,
     height: 300,
   },
@@ -113,9 +112,9 @@ export const skillsData = [
   "Firebase",
   "MySQL",
   "PostgreSQL",
+  "Socket.io",
   "Prisma",
   "Vercel",
   "Framer",
   "Figma",
-  "Notion",
 ] as const;
