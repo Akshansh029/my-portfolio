@@ -33,7 +33,8 @@ export default function About() {
         </span>
         . Currently, I’m deepening my knowledge in{" "}
         <span className="font-medium">Data Structures and Algorithms</span>{" "}
-        through LeetCode.{" "}
+        through LeetCode and exploring and diving into{" "}
+        <span className="font-medium">DevOps</span>.{" "}
       </p>{" "}
       <p>
         {" "}
