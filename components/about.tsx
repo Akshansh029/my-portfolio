@@ -4,6 +4,8 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHashnode } from "@fortawesome/free-brands-svg-icons";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -45,6 +47,14 @@ export default function About() {
         I’m seeking an <span className="font-medium">internship</span> to gain
         industry experience and make meaningful contributions to a team.{" "}
       </p>
+      <a
+        className="w-fit bg-white px-4 py-2 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full hover:underline active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white mx-auto mt-6"
+        href="https://akshansh29.hashnode.dev/"
+        target="_blank"
+      >
+        <span>Read my blogs on Hashnode</span>
+        <FontAwesomeIcon icon={faHashnode} />
+      </a>
     </motion.section>
   );
 }
