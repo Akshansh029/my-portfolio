@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-RCRJRTJLFP"
+        ></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-RCRJRTJLFP'); 
+          `}
+        </Script>
+      </head>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
