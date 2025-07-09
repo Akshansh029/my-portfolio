@@ -74,6 +74,7 @@ export const projectsData = [
     imageUrl: "/travelite.png",
     width: 500,
     height: 300,
+    link: "https://github.com/Akshansh029/Travelite",
   },
   {
     title: "Nebulo",
@@ -83,6 +84,7 @@ export const projectsData = [
     imageUrl: "/nebulo.png",
     width: 500,
     height: 300,
+    link: "https://github.com/Akshansh029/nebulo",
   },
   {
     title: "SlotWise",
@@ -92,6 +94,7 @@ export const projectsData = [
     imageUrl: "/slotwise.png",
     width: 500,
     height: 300,
+    link: "https://github.com/Akshansh029/study-scheduler",
   },
 ] as const;
 
