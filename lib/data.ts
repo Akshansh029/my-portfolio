@@ -32,20 +32,12 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Software Engineering Internship",
-    location: "Remote",
-    description:
-      "Completed a Vue.js simulation, drafted technical requirements, and aligned solutions with business needs at GE Aerospace.",
-    icon: React.createElement(FaBriefcase),
-    date: "December 2024",
-  },
-  {
     title: "UI/UX Designer at IEEE CompSoc",
     location: "VIT Chennai",
     description:
       "Designed and developed user interfaces for IEEE Comsoc's web platforms, improving user experience and engagement.",
     icon: React.createElement(TbBrandFigma),
-    date: "May 2023 - Present",
+    date: "May 2023 - May 2025",
   },
   {
     title: "Completed Web Development Bootcamp",
@@ -56,12 +48,20 @@ export const experiencesData = [
     date: "June 2023",
   },
   {
+    title: "Software Engineering Internship",
+    location: "Remote",
+    description:
+      "Completed a Vue.js simulation, drafted technical requirements, and aligned solutions with business needs at GE Aerospace.",
+    icon: React.createElement(FaBriefcase),
+    date: "December 2024",
+  },
+  {
     title: "Ongoing Web Development Projects",
     location: "Various Locations",
     description:
-      "Currently working on multiple projects, enhancing skills in Next.js, Firebase, and API integrations while exploring AI.",
+      "Currently working on multiple projects, enhancing skills in Next.js, SQL databases, and API integrations while exploring DevOps.",
     icon: React.createElement(FaReact),
-    date: "2024",
+    date: "2025",
   },
 ];
 
@@ -76,20 +76,20 @@ export const projectsData = [
     height: 300,
   },
   {
-    title: "Budgeteer",
+    title: "Nebulo",
     description:
-      "Budgeteer is a user-friendly budget tracking app with income and expense tracking, multi-currency support, and light/dark mode.",
-    tags: ["Next.js", "TypeScript", "Tailwind", "Node.js", "Prisma"],
-    imageUrl: "/budgeteer.png",
+      "Nebulo is a web application designed to analyze GitHub codebases. It provides repository analysis, AI-powered question answering, and automated README generation.",
+    tags: ["Next.js", "TypeScript", "tRPC", "PostgreSQL", "Gemini API"],
+    imageUrl: "/nebulo.png",
     width: 500,
     height: 300,
   },
   {
-    title: "CodeChime",
+    title: "SlotWise",
     description:
-      "A real-time code editor enabling seamless collaboration, where multiple users can edit together, see live updates instantly, and work efficiently in sync.",
+      "SlotWise is a modern study scheduling and review application that helps students plan, track, and review their study sessions with spaced-repetition flashcards.",
     tags: ["React", "Tailwind", "Socket.io", "Express.js", "Codemirror"],
-    imageUrl: "/codechime.png",
+    imageUrl: "/slotwise.png",
     width: 500,
     height: 300,
   },
@@ -116,6 +116,9 @@ export const skillsData = [
   "PostgreSQL",
   "Socket.io",
   "Prisma",
+  "Docker",
+  "Jenkins",
+  "GitHub Actions",
   "Vercel",
   "Framer",
   "Figma",
