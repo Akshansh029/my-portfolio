@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -32,12 +32,20 @@ const Footer = () => {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com/in/akshansh-singh"
+              href="https://www.linkedin.com/in/akshansh-singh-3b6718250/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               <Linkedin className="h-5 w-5" />
+            </a>
+            <a
+              href="https://www.instagram.com/__akshansh_singh/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Instagram className="h-5 w-5" />
             </a>
             <a
               href="mailto:akshanshsingh00@gmail.com"

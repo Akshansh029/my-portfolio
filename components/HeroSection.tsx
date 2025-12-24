@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, FileText } from "lucide-react";
+import { ArrowDown, Github, Linkedin, FileText, Instagram } from "lucide-react";
 import { Button } from "./ui/button";
 
 const HeroSection = () => {
@@ -95,12 +95,20 @@ const HeroSection = () => {
             <Github className="h-5 w-5" />
           </a>
           <a
-            href="https://linkedin.com/in/akshansh-singh"
+            href="https://www.linkedin.com/in/akshansh-singh-3b6718250/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full glass hover:bg-primary/10 transition-colors duration-300"
           >
             <Linkedin className="h-5 w-5" />
+          </a>
+          <a
+            href="https://www.instagram.com/__akshansh_singh/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full glass hover:bg-primary/10 transition-colors duration-300"
+          >
+            <Instagram className="h-5 w-5" />
           </a>
         </motion.div>
       </div>
