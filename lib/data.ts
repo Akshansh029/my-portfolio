@@ -1,5 +1,19 @@
+import {
+  faCss3,
+  faDocker,
+  faFigma,
+  faGit,
+  faGithub,
+  faHtml5,
+  faJava,
+  faJenkins,
+  faJs,
+  faLinux,
+  faNodeJs,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
 import React from "react";
-import { FaBriefcase, FaReact } from "react-icons/fa";
+import { FaBriefcase, FaDatabase, FaFire, FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { TbBrandFigma } from "react-icons/tb";
 
@@ -30,99 +44,96 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
-  {
-    title: "UI/UX Designer at IEEE CompSoc",
-    location: "VIT Chennai",
-    description:
-      "Designed and developed user interfaces for IEEE Comsoc's web platforms, improving user experience and engagement.",
-    icon: React.createElement(TbBrandFigma),
-    date: "May 2023 - May 2025",
-  },
-  {
-    title: "Completed Web Development Bootcamp",
-    location: "Online",
-    description:
-      "Graduated from an intensive program focused on full-stack web development, mastering technologies like React and Node.js.",
-    icon: React.createElement(LuGraduationCap),
-    date: "June 2023",
-  },
+export const experiences = [
   {
     title: "Software Engineering Internship",
+    company: "GE Aerospace",
     location: "Remote",
+    period: "December 2024",
     description:
-      "Completed a Vue.js simulation, drafted technical requirements, and aligned solutions with business needs at GE Aerospace.",
-    icon: React.createElement(FaBriefcase),
-    date: "December 2024",
+      "Completed a Vue.js simulation, drafted technical requirements, and aligned solutions with business needs.",
   },
   {
-    title: "Ongoing Web Development Projects",
-    location: "Various Locations",
+    title: "UI/UX Designer",
+    company: "IEEE CompSoc",
+    location: "VIT Chennai",
+    period: "May 2023 - May 2025",
     description:
-      "Currently working on multiple projects, enhancing skills in Next.js, SQL databases, and API integrations while exploring DevOps.",
-    icon: React.createElement(FaReact),
-    date: "2025",
+      "Designed and developed user interfaces for IEEE Comsoc's web platforms, improving user experience and engagement.",
+  },
+  {
+    title: "Web Development Bootcamp",
+    company: "Online Certification",
+    location: "Online",
+    period: "June 2023",
+    description:
+      "Graduated from an intensive program focused on full-stack web development, mastering React and Node.js.",
   },
 ];
 
-export const projectsData = [
+export const projects = [
   {
     title: "Travelite",
     description:
-      "Travelite is an AI-driven platform that customizes trip planning and suggests new itineraries based on users' past travel preferences.",
-    tags: ["Next.js", "Tailwind", "Firebase", "Gemini API", "Python"],
-    imageUrl: "/travelite.png",
-    width: 500,
-    height: 300,
-    link: "https://github.com/Akshansh029/Travelite",
+      "AI-driven platform that customizes trip planning and suggests itineraries based on users' past travel preferences.",
+    tech: ["Next.js", "Tailwind", "Firebase", "Gemini API", "Python"],
+    image: "/travelite.png",
+    github: "https://github.com/Akshansh029/travelite",
+    live: "#",
   },
   {
     title: "Nebulo",
     description:
-      "Nebulo is a web application designed to analyze GitHub codebases. It provides repository analysis, AI-powered question answering, and automated README generation.",
-    tags: ["Next.js", "TypeScript", "tRPC", "PostgreSQL", "Gemini API"],
-    imageUrl: "/nebulo.png",
-    width: 500,
-    height: 300,
-    link: "https://github.com/Akshansh029/nebulo",
+      "Web application for analyzing GitHub codebases with AI-powered Q&A and automated README generation.",
+    tech: ["Next.js", "TypeScript", "tRPC", "PostgreSQL", "Gemini API"],
+    image: "/nebulo.png",
+    github: "https://github.com/Akshansh029/nebulo",
+    live: "https://nebulo-zeta.vercel.app",
   },
   {
     title: "SlotWise",
     description:
-      "SlotWise is a modern study scheduling and review application that helps students plan, track, and review their study sessions with spaced-repetition flashcards.",
-    tags: ["React", "Tailwind", "Socket.io", "Express.js", "Codemirror"],
-    imageUrl: "/slotwise.png",
-    width: 500,
-    height: 300,
-    link: "https://github.com/Akshansh029/study-scheduler",
+      "Modern study scheduling and review app with spaced-repetition flashcards for effective learning.",
+    tech: ["React", "Tailwind", "Socket.io", "Express.js", "Codemirror"],
+    image: "/slotwise.png",
+    github: "https://github.com/Akshansh029/study-scheduler",
+    live: "https://slotwise-self.vercel.app",
   },
-] as const;
+];
 
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "Java",
-  "C",
-  "Linux",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Express",
-  "Vite",
-  "Tailwind",
-  "Git",
-  "MongoDB",
-  "Firebase",
-  "MySQL",
-  "PostgreSQL",
-  "Socket.io",
-  "Prisma",
-  "Docker",
-  "Jenkins",
-  "GitHub Actions",
-  "Vercel",
-  "Framer",
-  "Figma",
-] as const;
+export const skillCategories = [
+  {
+    title: "Languages",
+    skills: ["JavaScript", "TypeScript", "Java", "C", "Python"],
+  },
+  {
+    title: "Frameworks",
+    skills: ["React", "Next.js", "Node.js", "Express", "Vite"],
+  },
+  {
+    title: "Databases & ORMs",
+    skills: [
+      "MongoDB",
+      "PostgreSQL",
+      "MySQL",
+      "Firebase",
+      "Supabase",
+      "Prisma",
+    ],
+  },
+  {
+    title: "DevOps",
+    skills: [
+      "Docker",
+      "Jenkins",
+      "Kubernetes",
+      "Terraform",
+      "GitHub Actions",
+      "Bash Scripting",
+    ],
+  },
+  {
+    title: "Tools",
+    skills: ["AWS", "Git", "Vercel", "Postman", "Arduino", "Figma", "Notion"],
+  },
+];
