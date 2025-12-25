@@ -26,7 +26,7 @@ const ProjectsSection = () => {
           </h3>
         </motion.div>
 
-        <div className="space-y-16">
+        <div className="space-y-10 flex flex-col items-center">
           {projects.map((project, index) => (
             <motion.article
               key={project.title}
@@ -35,18 +35,18 @@ const ProjectsSection = () => {
               transition={{ duration: 0.6, delay: 0.1 * (index + 1) }}
               className="group"
             >
-              <div className="glass rounded-2xl overflow-hidden hover-lift">
+              <div className="glass rounded-2xl overflow-hidden hover-lift max-w-xl">
                 <div className="aspect-video overflow-hidden">
                   <Image
                     src={project.image}
                     alt={project.title}
-                    width={350}
+                    width={550}
                     height={150}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-fit transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
 
-                <div className="p-6 md:p-8">
+                <div className="px-6 py-4 md:py-6 md:px-8">
                   <div className="flex items-start justify-between mb-4">
                     <h4 className="text-2xl font-bold group-hover:text-primary transition-colors">
                       {project.title}

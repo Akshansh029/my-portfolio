@@ -39,7 +39,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-32 relative" ref={ref}>
       {/* Gradient orb */}
-      <div className="absolute bottom-40 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-40 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
 
       <div className="section-container relative z-10">
         <motion.div
