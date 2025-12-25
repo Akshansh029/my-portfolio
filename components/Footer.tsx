@@ -13,8 +13,7 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
             className="text-muted-foreground text-sm"
           >
-            © {new Date().getFullYear()} Akshansh Singh. Built with React &
-            Tailwind.
+            © {new Date().getFullYear()} Akshansh Singh.
           </motion.p>
 
           <motion.div

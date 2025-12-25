@@ -42,8 +42,8 @@ const AboutSection = () => {
 
           <p>
             Over the past two years, I've built several projects, gaining
-            proficiency in <span className="text-primary">React</span>,{" "}
-            <span className="text-primary">Next.js</span>,{" "}
+            proficiency in <span className="text-primary">Next.js</span>,{" "}
+            <span className="text-primary">TypeScript</span>,{" "}
             <span className="text-primary">Express.js</span>, and various
             databases. Currently deepening my knowledge in{" "}
             <span className="text-foreground">
