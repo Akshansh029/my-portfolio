@@ -59,15 +59,15 @@ export const experiences = [
     location: "VIT Chennai",
     period: "May 2023 - May 2025",
     description:
-      "Designed and developed user interfaces for IEEE Comsoc's web platforms, improving user experience and engagement.",
+      "Designed user interfaces for IEEE Comsoc's web platforms, improving user experience and engagement.",
   },
   {
-    title: "Web Development Bootcamp",
-    company: "Online Certification",
-    location: "Online",
-    period: "June 2023",
+    title: "Frontend Developer Intern",
+    company: "STAATEN Tech",
+    location: "Remote",
+    period: "Sept 2025 - Nov 2025",
     description:
-      "Graduated from an intensive program focused on full-stack web development, mastering React and Node.js.",
+      "Developed user interfaces for STAATEN Tech's web applications, improving user experience and engagement.",
   },
 ];
 
