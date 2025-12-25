@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { sendEmail } from "@/actions/sendEmail";
 
 const ContactSection = () => {
   const ref = useRef(null);
@@ -24,8 +25,22 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const formDataObj = new FormData();
+    formDataObj.append("name", formData.name);
+    formDataObj.append("senderEmail", formData.email);
+    formDataObj.append("message", formData.message);
+
+    const { data, error } = await sendEmail(formDataObj);
+
+    if (error) {
+      toast({
+        title: "Error",
+        description: error,
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
 
     toast({
       title: "Message sent!",

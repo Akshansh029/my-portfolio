@@ -5,6 +5,20 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+export const validateEmail = (value: unknown, maxLength: number) => {
+  if (
+    !value ||
+    typeof value !== "string" ||
+    value.length > maxLength ||
+    !emailRegex.test(value)
+  ) {
+    return false;
+  }
+  return true;
+};
+
 export const validateString = (
   value: unknown,
   maxLength: number
