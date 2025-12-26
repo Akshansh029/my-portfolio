@@ -1,5 +1,5 @@
 "use client";
-import { experiences } from "@/lib/data";
+import { experiences } from "@/data/data";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";

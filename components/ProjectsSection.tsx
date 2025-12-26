@@ -4,7 +4,8 @@ import { useRef } from "react";
 import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 import { Badge } from "./ui/badge";
 import Image from "next/image";
-import { projects } from "@/lib/data";
+import { projects } from "@/data/projects";
+import Link from "next/link";
 
 const ProjectsSection = () => {
   const ref = useRef(null);
@@ -29,14 +30,14 @@ const ProjectsSection = () => {
         <div className="space-y-10 flex flex-col items-center">
           {projects.map((project, index) => (
             <motion.article
-              key={project.title}
+              key={project.id}
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 * (index + 1) }}
               className="group"
             >
-              <div className="glass rounded-2xl overflow-hidden hover-lift max-w-xl">
-                <div className="aspect-video overflow-hidden">
+              {/* <div className="glass rounded-2xl overflow-hidden hover-lift max-w-xl">
+                <div className="aspect-auto overflow-hidden">
                   <Image
                     src={project.image}
                     alt={project.title}
@@ -86,10 +87,64 @@ const ProjectsSection = () => {
                       >
                         {tech}
                       </Badge>
-                    ))}
+                    ))} */}
+              <Link href={`/projects/${project.id}`} className="block">
+                <div className="glass rounded-2xl overflow-hidden hover-lift max-w-xl cursor-pointer">
+                  <div className="aspect-auto overflow-hidden">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      width={550}
+                      height={150}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+
+                  <div className="p-4 sm:p-6 md:p-8">
+                    <div className="flex items-start justify-between mb-3 md:mb-4">
+                      <h4 className="text-xl sm:text-2xl font-bold group-hover:text-primary transition-colors">
+                        {project.title}
+                      </h4>
+                      <div className="flex gap-3">
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
+                        >
+                          <Github className="h-5 w-5" />
+                        </a>
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
+                        >
+                          <ArrowUpRight className="h-5 w-5" />
+                        </a>
+                      </div>
+                    </div>
+
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      {project.description}
+                    </p>
+
+                    <div className="flex flex-wrap gap-2">
+                      {project.tech.map((tech) => (
+                        <Badge
+                          key={tech}
+                          variant="secondary"
+                          className="font-mono text-xs"
+                        >
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </motion.article>
           ))}
         </div>

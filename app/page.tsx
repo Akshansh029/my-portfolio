@@ -26,7 +26,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background noise-bg">
-      <Navigation />
       <main>
         <HeroSection />
         <AboutSection />
@@ -36,7 +35,6 @@ const Index = () => {
         <ContactSection />
         <EasterEggHint />
       </main>
-      <Footer />
     </div>
   );
 };
