@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import ThemeContextProvider from "@/context/theme-context";
 import Script from "next/script";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -38,6 +39,7 @@ export default function RootLayout({
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             {children}
+            <SpeedInsights />
             <Toaster />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
