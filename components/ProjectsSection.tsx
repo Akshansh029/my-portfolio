@@ -60,14 +60,16 @@ const ProjectsSection = () => {
                       >
                         <Github className="h-5 w-5" />
                       </a>
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
-                      >
-                        <ArrowUpRight className="h-5 w-5" />
-                      </a>
+                      {project.live && (
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
+                        >
+                          <ArrowUpRight className="h-5 w-5" />
+                        </a>
+                      )}
                     </div>
                   </div>
 

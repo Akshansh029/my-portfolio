@@ -79,7 +79,6 @@ export const projects = [
     tech: ["Next.js", "Tailwind", "Firebase", "Gemini API", "Python"],
     image: "/travelite.png",
     github: "https://github.com/Akshansh029/travelite",
-    live: "#",
   },
   {
     title: "Nebulo",
