@@ -52,7 +52,7 @@ const HeroSection = () => {
         >
           <Button
             size="lg"
-            className="glow-box  transition text-xs sm:text-sm md:text-base duration-300 hover:-translate-y-1"
+            className="glow-box transition text-xs sm:text-sm md:text-base duration-300 hover:-translate-y-1"
             onClick={() =>
               document
                 .getElementById("contact")

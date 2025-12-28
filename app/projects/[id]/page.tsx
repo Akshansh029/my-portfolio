@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import remarkGfm from "remark-gfm";
 
 const ProjectDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -95,6 +96,7 @@ const ProjectDetail = () => {
 
             <div className="prose prose-invert prose-lg max-w-none">
               <ReactMarkdown
+                remarkPlugins={[remarkGfm]}
                 components={{
                   h1: ({ children }) => (
                     <h1 className="text-3xl font-bold mt-8 mb-4 text-foreground">
@@ -139,7 +141,7 @@ const ProjectDetail = () => {
                       );
                     }
                     return (
-                      <code className="block p-4 rounded-lg bg-muted font-mono text-sm overflow-x-auto">
+                      <code className="block p-4 rounded-lg bg-muted text-primary font-mono text-sm overflow-x-auto">
                         {children}
                       </code>
                     );

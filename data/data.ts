@@ -46,6 +46,14 @@ export const links = [
 
 export const experiences = [
   {
+    title: "Google GenAI Hackathon Winner",
+    company: "Google",
+    location: "Chennai, India",
+    period: "October 2024",
+    description:
+      "Led a cross-functional team to prototype and demo an AI solution under tight deadlines.",
+  },
+  {
     title: "Software Engineering Internship",
     company: "GE Aerospace",
     location: "Remote",
@@ -56,7 +64,7 @@ export const experiences = [
   {
     title: "UI/UX Designer",
     company: "IEEE CompSoc",
-    location: "VIT Chennai",
+    location: "VIT Chennai, India",
     period: "May 2023 - May 2025",
     description:
       "Designed user interfaces for IEEE Comsoc's web platforms, improving user experience and engagement.",

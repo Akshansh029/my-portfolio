@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
+import { ExternalLink, Github, ArrowUpRight, ArrowRight } from "lucide-react";
 import { Badge } from "./ui/badge";
 import Image from "next/image";
 import { projects } from "@/data/projects";
@@ -155,15 +155,13 @@ const ProjectsSection = () => {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mt-12 text-center"
         >
-          <a
-            href="https://github.com/Akshansh029?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
+          <Link
+            href="/projects"
+            className="inline-flex items-center transition duration-300 hover:-translate-y-1 gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/80 font-medium"
           >
-            View all projects on GitHub
-            <ExternalLink className="h-4 w-4" />
-          </a>
+            Explore All Projects
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </motion.div>
       </div>
     </section>
