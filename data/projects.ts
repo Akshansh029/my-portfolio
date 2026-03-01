@@ -1,6 +1,7 @@
 import nebuloMd from "@/content/projects/nebulo.md";
 import traveliteMd from "@/content/projects/travelite.md";
 import slotwiseMd from "@/content/projects/slotwise.md";
+import projectManagementMd from "@/content/projects/project-management.md";
 
 export interface Project {
   id: string;
@@ -15,14 +16,15 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "travelite",
-    title: "Travelite",
+    id: "project-management",
+    title: "Project Management System",
     description:
-      "AI-driven platform that customizes trip planning and suggests itineraries based on users' past travel preferences.",
-    tech: ["Next.js", "Tailwind", "Firebase", "Gemini API", "Python"],
-    image: "/travelite.png",
-    github: "https://github.com/Akshansh029/travelite",
-    content: traveliteMd,
+      "A full-stack, production-ready task management platform built for teams",
+    tech: ["Next.js", "Axios", "Spring Boot", "Spring Data JPA", "PostgreSQL"],
+    image: "/project-management.png",
+    github: "https://github.com/Akshansh029/Task-Management-Platform-Frontend",
+    live: "https://task-management-platform-frontend-five.vercel.app",
+    content: projectManagementMd,
   },
   {
     id: "nebulo",
@@ -40,11 +42,21 @@ export const projects: Project[] = [
     title: "SlotWise",
     description:
       "Modern study scheduling and review app with spaced-repetition flashcards for effective learning.",
-    tech: ["React", "Tailwind", "Socket.io", "Express.js", "Codemirror"],
+    tech: ["Next.js", "Tailwind", "TypeScript", "tRPC", "PostgreSQL"],
     image: "/slotwise.png",
     github: "https://github.com/Akshansh029/study-scheduler",
     live: "https://slotwise-self.vercel.app",
     content: slotwiseMd,
+  },
+  {
+    id: "travelite",
+    title: "Travelite",
+    description:
+      "AI-driven platform that customizes trip planning and suggests itineraries based on users' past travel preferences.",
+    tech: ["Next.js", "Tailwind", "Firebase", "Gemini API", "Python"],
+    image: "/travelite.png",
+    github: "https://github.com/Akshansh029/travelite",
+    content: traveliteMd,
   },
 ];
 

@@ -40,8 +40,8 @@ const HeroSection = () => {
           className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed"
         >
           I craft modern web experiences with{" "}
-          <span className="text-foreground font-medium">React</span> &{" "}
-          <span className="text-foreground font-medium">Next.js</span>
+          <span className="text-foreground font-medium">Next.js</span> &{" "}
+          <span className="text-foreground font-medium">TypeScript</span>
         </motion.p>
 
         <motion.div

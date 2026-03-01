@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github, ArrowUpRight, ArrowRight } from "lucide-react";
+import {
+  ExternalLink,
+  Github,
+  ArrowUpRight,
+  ArrowRight,
+  FileIcon,
+  Info,
+} from "lucide-react";
 import { Badge } from "./ui/badge";
 import Image from "next/image";
 import { projects } from "@/data/projects";
@@ -28,15 +35,14 @@ const ProjectsSection = () => {
         </motion.div>
 
         <div className="space-y-10 flex flex-col items-center">
-          {projects.map((project, index) => (
+          {projects.slice(0, 3).map((project, index) => (
             <motion.article
               key={project.id}
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.1 * (index + 1) }}
               className="group"
             >
-              {/* <div className="glass rounded-2xl overflow-hidden hover-lift max-w-xl">
+              <div className="glass rounded-2xl overflow-hidden hover-lift max-w-xl">
                 <div className="aspect-auto overflow-hidden">
                   <Image
                     src={project.image}
@@ -54,19 +60,17 @@ const ProjectsSection = () => {
                     </h4>
                     <div className="flex gap-3">
                       <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
+                        href={`/projects/${project.id}`}
+                        className="p-2 rounded-lg hover:bg-primary/10 transition-colors border-2"
                       >
-                        <Github className="h-5 w-5" />
+                        <Info className="h-5 w-5" />
                       </a>
                       {project.live && (
                         <a
                           href={project.live}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
+                          className="p-2 rounded-lg hover:bg-primary/10 transition-colors border-2"
                         >
                           <ArrowUpRight className="h-5 w-5" />
                         </a>
@@ -87,8 +91,8 @@ const ProjectsSection = () => {
                       >
                         {tech}
                       </Badge>
-                    ))} */}
-              <Link href={`/projects/${project.id}`} className="block">
+                    ))}
+                    {/* <Link href={`/projects/${project.id}`} className="block">
                 <div className="glass rounded-2xl overflow-hidden hover-lift max-w-xl cursor-pointer">
                   <div className="aspect-auto overflow-hidden">
                     <Image
@@ -144,7 +148,10 @@ const ProjectsSection = () => {
                     </div>
                   </div>
                 </div>
-              </Link>
+              </Link> */}
+                  </div>
+                </div>
+              </div>
             </motion.article>
           ))}
         </div>
@@ -157,7 +164,7 @@ const ProjectsSection = () => {
         >
           <Link
             href="/projects"
-            className="inline-flex items-center transition duration-300 hover:-translate-y-1 gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/80 font-medium"
+            className="inline-flex items-center transition duration-300 hover:-translate-y-1 gap-2 px-5 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/80 font-medium text-sm"
           >
             Explore All Projects
             <ArrowRight className="h-4 w-4" />
