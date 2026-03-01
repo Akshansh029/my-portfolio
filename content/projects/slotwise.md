@@ -4,19 +4,6 @@ SlotWise is a modern study scheduling and review application that helps students
 
 ![Landing page](public/Landing_page.png)
 
-## Tech Stack
-
-- ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
-- ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
-- ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-- ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
-- ![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=blue)
-- [![PostgreSQL](https://img.shields.io/badge/postgresql-4169e1?logo=Postgresql&logoColor=white)](https://www.postgresql.org/)
-- ![tRPC](https://img.shields.io/badge/tRPC-000000?logo=trpc&logoColor=white)
-- ![Clerk](https://img.shields.io/badge/Clerk-FF6B6B?logo=clerk&logoColor=white)
-
----
-
 ## Features
 
 - **Subject management**: Create and manage all subject and organize different sessions and reviews according to your subjects.
@@ -25,7 +12,16 @@ SlotWise is a modern study scheduling and review application that helps students
 - **Progress Tracking**: Log session durations and view stats over time.
 - **User Profiles**: Sign up, sign in, and manage your profile securely with Clerk.
 
----
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Prisma
+- PostgreSQL
+- tRPC
+- Clerk
 
 ## Screenshots
 
@@ -50,114 +46,49 @@ SlotWise is a modern study scheduling and review application that helps students
 - Profile page
   ![Profile page](image.png)
 
----
-
 ## Usage
 
-1. **Clone the repo**
+### 1. **Create & manage Subjects**
 
-   ```bash
-   git clone https://github.com/akshansh029/study-scheduler.git
-   cd study-scheduler
-   ```
+- Go to **Subjects** and create a new subject (e.g., "Power Electronics").
+- Each subject is the top-level container for sessions and flashcards.
+- Use subjects to group sessions and review items so your study/review history is organized by topic.
 
-2. **Install dependencies**
+![Subjects page](/project-images/studyscheduler/Subjects.png)
 
-   ```bash
-   npm install
-   ```
+### 2. **Schedule study Sessions**
 
-3. **Configure environment variables**
-   Create a .env.local file in the project root with the variables listed below.
+- Open the **Schedule** page (calendar view) to plan sessions:
+  - Create sessions with date/time, duration, and associate them to a subject.
+  - Edit or delete scheduled sessions from the calendar.
+- Scheduled sessions will appear in your Sessions list and on the calendar for quick access. :contentReference[oaicite:2]{index=2}
 
-4. **Run database migrations & generate client**
+![Schedule page](/project-images/studyscheduler/Schedule.png)
 
-   ```bash
-   npm run db:generate
-   ```
+### 3. **Start a Session & Track time**
 
-5. **Start the development server**
+- From **Sessions** or the calendar, start an ongoing session:
+  - The app tracks session duration and lets you pause/resume.
+  - When a session ends you can log the completed time which feeds into progress analytics.
+- Ongoing session UI shows timer and quick controls.
 
-   ```bash
-   npm run dev
-   ```
+![Ongoing session](/project-images/studyscheduler/Session.png)
 
-6. **Build & preview**
-   ```bash
-   npm run build
-   npm run preview
-   ```
+### 4. **Create Flashcards & Review (Spaced Repetition)**
 
-## Project Structure
+- Create flashcards under a subject (front/back format).
+- Enter the **Review** page to run spaced-repetition reviews:
+  - The review flow presents flashcards, records your recall score, and schedules the next review according to the algorithm.
+  - You can review by subject or run a mixed review session.
 
-```text
-├── .vscode
-├── hooks
-├── node_modules
-│   └── prisma
-│       └── engines
-├── prisma
-├── public
-├── scripts
-└── src
-    ├── app
-    │   ├── (protected)
-    │   │   └── dashboard
-    │   │       ├── flashcards
-    │   │       ├── profile
-    │   │       ├── review
-    │   │       │   └── [subjectId]
-    │   │       ├── schedule
-    │   │       ├── sessions
-    │   │       │   └── [sessionId]
-    │   │       └── subjects
-    │   ├── api
-    │   │   ├── cron
-    │   │   │   └── reset-sessions
-    │   │   └── trpc
-    │   │       └── [trpc]
-    │   └── sync-user
-    ├── components
-    │   └── ui
-    ├── hooks
-    ├── lib
-    ├── server
-    │   └── api
-    │       └── routers
-    ├── styles
-    ├── trpc
-    └── utils
-```
+![Review page](/project-images/studyscheduler/Review.png)
 
-## Database schema
+### 5. **View Progress & Analytics**
 
-![Database schema](public/DB_schema.png)
+- Head to **Dashboard / Profile** to see:
+  - Total study time, session counts, and trends over time.
+  - Per-subject breakdown of time spent and review stats.
+- Use analytics to spot weak topics and adjust schedules.
 
-## Environment Variables
-
-```text
-DATABASE_URL="postgresql-database-url"
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="your-clerk-publishable-key"
-CLERK_SECRET_KEY="your-clerk-secret-key"
-NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL='/'
-NEXT_PUBLIC_CLERK_SIGN_UP_FALLBACK_REDIRECT_URL='/'
-NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL='/sync-user'
-NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL='/dashboard'
-CRON_SECRET="random-hex-code"
-```
-
-> Note: Create a Clerk application at Clerk Dashboard to obtain your keys.
-
-## Contributing
-
-1. Fork the repository
-
-2. Create a feature branch (git checkout -b feat/YourFeature)
-
-3. Commit your changes (git commit -m 'Add some feature')
-
-4. Push to your branch (git push origin feat/YourFeature)
-
-5. Open a Pull Request detailing your changes
-
-Please adhere to the existing code style and include tests where applicable.
+![Dashboard](/project-images/studyscheduler/Dashboard.png)
+![Profile](/project-images/studyscheduler/Profile.png)
