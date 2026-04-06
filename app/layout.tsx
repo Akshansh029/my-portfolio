@@ -42,11 +42,8 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
             <Navigation />
             {children}
-<<<<<<< HEAD
             <SpeedInsights />
-=======
             <Footer />
->>>>>>> revamp
             <Toaster />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
