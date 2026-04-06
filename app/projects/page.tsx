@@ -6,6 +6,7 @@ import { projects } from "@/data/projects";
 import Navigation from "@/components/Navigation";
 import Link from "next/link";
 import Image from "next/image";
+import ProjectCard from "@/components/ProjectCard";
 
 const Projects = () => {
   return (
@@ -43,63 +44,7 @@ const Projects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
               >
-                <Link href={`/projects/${project.id}`} className="group block border-[1px] rounded-2xl">
-                  <div className="glass rounded-2xl overflow-hidden hover-lift max-w-xl cursor-pointer ">
-                    <div className="aspect-video overflow-hidden">
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        width={550}
-                        height={150}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                    </div>
-
-                    <div className="p-4 sm:p-6 md:p-8">
-                      <div className="flex items-start justify-between mb-3 md:mb-4">
-                        <h2 className="text-xl sm:text-2xl font-bold group-hover:text-primary transition-colors">
-                          {project.title}
-                        </h2>
-                        <div className="flex gap-3">
-                          <a
-                            href={project.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={(e) => e.stopPropagation()}
-                            className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
-                          >
-                            <Github className="h-5 w-5" />
-                          </a>
-                          {project.live && <a
-                            href={project.live}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={(e) => e.stopPropagation()}
-                            className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
-                          >
-                            <ArrowUpRight className="h-5 w-5" />
-                          </a>}
-                        </div>
-                      </div>
-
-                      <p className="text-muted-foreground mb-6 leading-relaxed">
-                        {project.description}
-                      </p>
-
-                      <div className="flex flex-wrap gap-2">
-                        {project.tech.map((tech) => (
-                          <Badge
-                            key={tech}
-                            variant="secondary"
-                            className="font-mono text-xs"
-                          >
-                            {tech}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </Link>
+                <ProjectCard key={project.id} project={project}/>
               </motion.article>
             ))}
           </div>

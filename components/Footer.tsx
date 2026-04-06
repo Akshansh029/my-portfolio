@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -22,36 +23,36 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="flex items-center gap-4"
           >
-            <a
+            <Link
               href="https://github.com/Akshansh029"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               <Github className="h-5 w-5" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/akshansh-singh-3b6718250/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               <Linkedin className="h-5 w-5" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.instagram.com/__akshansh_singh/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               <Instagram className="h-5 w-5" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="mailto:akshanshsingh00@gmail.com"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               <Mail className="h-5 w-5" />
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>

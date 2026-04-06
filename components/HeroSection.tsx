@@ -1,6 +1,14 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, FileText, Instagram } from "lucide-react";
+import {
+  ArrowDown,
+  Github,
+  Linkedin,
+  FileText,
+  Instagram,
+  Mail,
+} from "lucide-react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -69,14 +77,14 @@ const HeroSection = () => {
             className="transition duration-300 hover:-translate-y-1 border-border/50 hover:border-primary/50 hover:bg-primary/5 hover:text-white text-xs sm:text-sm md:text-base"
             asChild
           >
-            <a
+            <Link
               href="/full-stack-resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FileText className="mr-2 h-4 w-4" />
               Resume
-            </a>
+            </Link>
           </Button>
         </motion.div>
 
@@ -86,30 +94,36 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="flex items-center justify-center gap-4 mt-10"
         >
-          <a
+          <Link
             href="https://github.com/Akshansh029"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full glass hover:bg-primary/10 transition-colors duration-300"
           >
             <Github className="h-5 w-5" />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.linkedin.com/in/akshansh-singh-3b6718250/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full glass hover:bg-primary/10 transition-colors duration-300"
           >
             <Linkedin className="h-5 w-5" />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.instagram.com/__akshansh_singh/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full glass hover:bg-primary/10 transition-colors duration-300"
           >
             <Instagram className="h-5 w-5" />
-          </a>
+          </Link>
+          <Link
+            href="mailto:akshanshsingh00@gmail.com"
+            className="p-3 rounded-full glass hover:bg-primary/10 transition-colors duration-300"
+          >
+            <Mail className="h-5 w-5" />
+          </Link>
         </motion.div>
       </div>
 
