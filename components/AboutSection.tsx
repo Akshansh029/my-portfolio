@@ -46,10 +46,9 @@ const AboutSection = () => {
             <span className="text-primary">TypeScript</span>,{" "}
             <span className="text-primary">Express.js</span>, and various
             databases. Currently deepening my knowledge in{" "}
-            <span className="text-foreground">
-              Data Structures & Algorithms
-            </span>{" "}
-            while exploring <span className="text-foreground">DevOps</span>.
+            <span className="text-foreground">Backend Developement</span> with
+            the help of <span className="text-primary">Spring Boot</span> while
+            exploring <span className="text-foreground">DevOps</span>.
           </p>
 
           <p>

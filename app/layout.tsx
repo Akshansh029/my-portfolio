@@ -5,6 +5,8 @@ import ThemeContextProvider from "@/context/theme-context";
 import Script from "next/script";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Toaster } from "@/components/ui/toaster";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,8 +40,13 @@ export default function RootLayout({
       <body>
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
+            <Navigation />
             {children}
+<<<<<<< HEAD
             <SpeedInsights />
+=======
+            <Footer />
+>>>>>>> revamp
             <Toaster />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>

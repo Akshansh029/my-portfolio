@@ -1,5 +1,5 @@
 "use client";
-import { skillCategories } from "@/lib/data";
+import { skillCategories } from "@/data/data";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";

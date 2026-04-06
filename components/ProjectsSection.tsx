@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
-import { Badge } from "./ui/badge";
-import Image from "next/image";
-import { projects } from "@/lib/data";
+import { projects } from "@/data/projects";
+import Link from "next/link";
+import ProjectCard from "./ProjectCard";
+import { ArrowRight } from "lucide-react";
 
 const ProjectsSection = () => {
   const ref = useRef(null);
@@ -27,69 +27,14 @@ const ProjectsSection = () => {
         </motion.div>
 
         <div className="space-y-10 flex flex-col items-center">
-          {projects.map((project, index) => (
+          {projects.slice(0, 3).map((project) => (
             <motion.article
-              key={project.title}
+              key={project.id}
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.1 * (index + 1) }}
               className="group"
             >
-              <div className="glass rounded-2xl overflow-hidden hover-lift max-w-xl">
-                <div className="aspect-video overflow-hidden">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    width={550}
-                    height={150}
-                    className="w-full h-full object-fit transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-
-                <div className="px-6 py-4 md:py-6 md:px-8">
-                  <div className="flex items-start justify-between mb-4">
-                    <h4 className="text-2xl font-bold group-hover:text-primary transition-colors">
-                      {project.title}
-                    </h4>
-                    <div className="flex gap-3">
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
-                      >
-                        <Github className="h-5 w-5" />
-                      </a>
-                      {project.live && (
-                        <a
-                          href={project.live}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
-                        >
-                          <ArrowUpRight className="h-5 w-5" />
-                        </a>
-                      )}
-                    </div>
-                  </div>
-
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    {project.description}
-                  </p>
-
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech) => (
-                      <Badge
-                        key={tech}
-                        variant="secondary"
-                        className="font-mono text-xs"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-              </div>
+              <ProjectCard key={project.id} project={project}/>
             </motion.article>
           ))}
         </div>
@@ -100,15 +45,13 @@ const ProjectsSection = () => {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mt-12 text-center"
         >
-          <a
-            href="https://github.com/Akshansh029?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
+          <Link
+            href="/projects"
+            className="inline-flex items-center transition duration-300 hover:-translate-y-1 gap-2 px-5 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/80 font-medium text-sm"
           >
-            View all projects on GitHub
-            <ExternalLink className="h-4 w-4" />
-          </a>
+            Explore All Projects
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </motion.div>
       </div>
     </section>

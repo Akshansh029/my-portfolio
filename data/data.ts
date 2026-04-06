@@ -1,22 +1,3 @@
-import {
-  faCss3,
-  faDocker,
-  faFigma,
-  faGit,
-  faGithub,
-  faHtml5,
-  faJava,
-  faJenkins,
-  faJs,
-  faLinux,
-  faNodeJs,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
-import React from "react";
-import { FaBriefcase, FaDatabase, FaFire, FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import { TbBrandFigma } from "react-icons/tb";
-
 export const links = [
   {
     name: "Home",
@@ -46,6 +27,14 @@ export const links = [
 
 export const experiences = [
   {
+    title: "Google GenAI Hackathon Winner",
+    company: "Google",
+    location: "Chennai, India",
+    period: "October 2024",
+    description:
+      "Led a cross-functional team to prototype and demo an AI solution under tight deadlines.",
+  },
+  {
     title: "Software Engineering Internship",
     company: "GE Aerospace",
     location: "Remote",
@@ -56,7 +45,7 @@ export const experiences = [
   {
     title: "UI/UX Designer",
     company: "IEEE CompSoc",
-    location: "VIT Chennai",
+    location: "VIT Chennai, India",
     period: "May 2023 - May 2025",
     description:
       "Designed user interfaces for IEEE Comsoc's web platforms, improving user experience and engagement.",
@@ -67,36 +56,7 @@ export const experiences = [
     location: "Remote",
     period: "Sept 2025 - Nov 2025",
     description:
-      "Developed user interfaces for STAATEN Tech's web applications, improving user experience and engagement.",
-  },
-];
-
-export const projects = [
-  {
-    title: "Travelite",
-    description:
-      "AI-driven platform that customizes trip planning and suggests itineraries based on users' past travel preferences.",
-    tech: ["Next.js", "Tailwind", "Firebase", "Gemini API", "Python"],
-    image: "/travelite.png",
-    github: "https://github.com/Akshansh029/travelite",
-  },
-  {
-    title: "Nebulo",
-    description:
-      "Web application for analyzing GitHub codebases with AI-powered Q&A and automated README generation.",
-    tech: ["Next.js", "TypeScript", "tRPC", "PostgreSQL", "Gemini API"],
-    image: "/nebulo.png",
-    github: "https://github.com/Akshansh029/nebulo",
-    live: "https://nebulo-zeta.vercel.app",
-  },
-  {
-    title: "SlotWise",
-    description:
-      "Modern study scheduling and review app with spaced-repetition flashcards for effective learning.",
-    tech: ["React", "Tailwind", "Socket.io", "Express.js", "Codemirror"],
-    image: "/slotwise.png",
-    github: "https://github.com/Akshansh029/study-scheduler",
-    live: "https://slotwise-self.vercel.app",
+      "Developed 15+ responsive web pages and integrated backend APIs, enhancing the functionality and user experience of STAATEN Tech's web applications.",
   },
 ];
 

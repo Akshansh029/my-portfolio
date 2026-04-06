@@ -1,5 +1,5 @@
 "use client";
-import { experiences } from "@/lib/data";
+import { experiences } from "@/data/data";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -17,10 +17,10 @@ const ExperienceSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-sm font-mono text-primary mb-4 tracking-wider">
-            04. EXPERIENCE
+            04. EXPERIENCE & ACHIEVEMENTS
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold mb-12">
-            Where I've worked
+            My Journey So Far
           </h3>
         </motion.div>
 
