@@ -2,6 +2,7 @@ import nebuloMd from "@/content/projects/nebulo.md";
 import traveliteMd from "@/content/projects/travelite.md";
 import slotwiseMd from "@/content/projects/slotwise.md";
 import projectManagementMd from "@/content/projects/project-management.md";
+import terraformAwsInfraMd from "@/content/projects/terraformAwsInfra.md";
 
 export interface Project {
   id: string;
@@ -57,6 +58,16 @@ export const projects: Project[] = [
     image: "/travelite.png",
     github: "https://github.com/Akshansh029/travelite",
     content: traveliteMd,
+  },
+  {
+    id: "terraform-aws-infra",
+    title: "2-Tier-AWS-Infrastructure-Terraform",
+    description:
+      "Robust 2-tier AWS infrastructure using Terraform as Infrastructure as Code (IaC)",
+    tech: ["Terraform", "AWS", "Bash"],
+    image: "/project-images/terraform-aws-infra/2-tier-infra.drawio.png",
+    github: "https://github.com/Akshansh029/2-Tier-AWS-Infrastructure-Terraform",
+    content: terraformAwsInfraMd,
   },
 ];
 
