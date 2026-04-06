@@ -5,7 +5,6 @@ import { ArrowLeft, Github, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { getProjectById } from "@/data/projects";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -164,7 +163,6 @@ const ProjectDetail = () => {
           </motion.div>
         </article>
       </main>
-      <Footer />
     </div>
   );
 };

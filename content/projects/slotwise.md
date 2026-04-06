@@ -2,8 +2,6 @@
 
 SlotWise is a modern study scheduling and review application that helps students plan, track, and review their study sessions with spaced-repetition flashcards, smart scheduling and progress analytics. Built with the modern T3-Stack (Next.js App Router + tRPC + Prisma), it delivers an end-to-end type-safe developer experience and a smooth, responsive UI.
 
-![Landing page](public/Landing_page.png)
-
 ## Features
 
 - **Subject management**: Create and manage all subject and organize different sessions and reviews according to your subjects.
@@ -25,26 +23,21 @@ SlotWise is a modern study scheduling and review application that helps students
 
 ## Screenshots
 
-- Dashboard
-  ![Dashboard](<public/Dashboard.png)
 
-- Schedule page
-  ![Schedule page](public/Schedule_page.png)
+Schedule page
+  ![Schedule page](/project-images/slotwise/Schedule_page.png)
 
-- Subjects page
-  ![Subjects page](public/Subject_page.png)
+Subjects page
+  ![Subjects page](/project-images/slotwise/Subject_page.png)
 
-- Sessions page
-  ![Sessions page](public/Sessions_page.png)
+Sessions page
+  ![Sessions page](/project-images/slotwise/Sessions_page.png)
 
-- Ongoing session
-  ![Ongoing session](public/Ongoing_session.png)
+Ongoing session
+  ![Ongoing session](/project-images/slotwise/Ongoing_session.png)
 
-- Review page
-  ![Review page](public/Review_page.png)
-
-- Profile page
-  ![Profile page](image.png)
+Review page
+  ![Review page](/project-images/slotwise/Review_page.png)
 
 ## Usage
 
@@ -54,16 +47,12 @@ SlotWise is a modern study scheduling and review application that helps students
 - Each subject is the top-level container for sessions and flashcards.
 - Use subjects to group sessions and review items so your study/review history is organized by topic.
 
-![Subjects page](/project-images/studyscheduler/Subjects.png)
-
 ### 2. **Schedule study Sessions**
 
 - Open the **Schedule** page (calendar view) to plan sessions:
   - Create sessions with date/time, duration, and associate them to a subject.
   - Edit or delete scheduled sessions from the calendar.
-- Scheduled sessions will appear in your Sessions list and on the calendar for quick access. :contentReference[oaicite:2]{index=2}
-
-![Schedule page](/project-images/studyscheduler/Schedule.png)
+- Scheduled sessions will appear in your Sessions list and on the calendar for quick access.
 
 ### 3. **Start a Session & Track time**
 
@@ -72,8 +61,6 @@ SlotWise is a modern study scheduling and review application that helps students
   - When a session ends you can log the completed time which feeds into progress analytics.
 - Ongoing session UI shows timer and quick controls.
 
-![Ongoing session](/project-images/studyscheduler/Session.png)
-
 ### 4. **Create Flashcards & Review (Spaced Repetition)**
 
 - Create flashcards under a subject (front/back format).
@@ -81,14 +68,10 @@ SlotWise is a modern study scheduling and review application that helps students
   - The review flow presents flashcards, records your recall score, and schedules the next review according to the algorithm.
   - You can review by subject or run a mixed review session.
 
-![Review page](/project-images/studyscheduler/Review.png)
-
 ### 5. **View Progress & Analytics**
 
-- Head to **Dashboard / Profile** to see:
+  - Head to **Dashboard / Profile** to see:
   - Total study time, session counts, and trends over time.
-  - Per-subject breakdown of time spent and review stats.
-- Use analytics to spot weak topics and adjust schedules.
+  - Use analytics to spot weak topics and adjust schedules.
 
-![Dashboard](/project-images/studyscheduler/Dashboard.png)
-![Profile](/project-images/studyscheduler/Profile.png)
+![Dashboard](/project-images/slotwise/Dashboard.png)

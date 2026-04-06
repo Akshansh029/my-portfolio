@@ -16,7 +16,9 @@ A full-stack, production-ready task management platform built for teams — feat
 - **Team Collaboration** — Real-time user search, role-based user management (Admin, Member, Viewer), and threaded comments on tasks
 - **Flexible Labeling** — Organize tasks and projects with customizable labels
 - **RESTful API** — Clean, documented endpoints with OpenAPI 3.0 / Swagger UI
-- **Responsive UI** — Dark-mode-ready interface with smooth micro-animations
+- **JWT Authentication** — Secure user authentication and authorization
+- **RBAC** — Role-based access control (Admin, Member, Viewer)
+- **Unit and Integration Testing** — Unit and integration testing for backend
 
 ---
 
@@ -71,6 +73,22 @@ com.akshansh.taskmanagementplatform/
 
 ## Screenshots
 
+### Projects page
+
+![Projects](/project-images/project-management/Projects-page.png)
+
+### Project Details page
+
+![Project Details](/project-images/project-management/Project-details-page.png)
+
+### Task Details page
+
+![Task Details](/project-images/project-management/Task-page.png)
+
+### Users page
+
+![Users](/project-images/project-management/Users-page.png)
+
 ---
 
 ## API Endpoints
@@ -103,9 +121,6 @@ The data model is built around five core entities:
 
 ## Todo
 
-- [ ] Spring Security with JWT authentication
-- [ ] Role-based access control (RBAC)
-- [ ] Unit & integration tests
 - [ ] Activity logs / audit trail
 - [ ] Task search and filtering
 - [ ] Email notifications

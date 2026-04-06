@@ -76,6 +76,7 @@ Travelite is an AI-powered virtual tour guide and trip planning platform that pr
 - **Trip Map**: View an interactive map of the trip location using Leaflet, which displays all recommended hotels, activities, and places to visit on the map.
 
 ![AI Trip 1](/project-images/travelite/AItrip.png)
+
 ![AI Trip 2](/project-images/travelite/AItrip1.png)
 
 ### 2. **View Past Trips**:
@@ -98,7 +99,9 @@ Travelite is an AI-powered virtual tour guide and trip planning platform that pr
   - **Audio Descriptions**: Listen to multilingual audio explanations about the significance of various sculptures and features of Konark Temple, enhancing your understanding of the place.
 
 ![Virtual Guide 1](/project-images/travelite/virtual1.png)
+
 ![Virtual Guide 2](/project-images/travelite/virtual2.png)
+
 ![Virtual Guide 3](/project-images/travelite/virtual3.png)
 
 ## UI & Design

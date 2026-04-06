@@ -1,22 +1,3 @@
-import {
-  faCss3,
-  faDocker,
-  faFigma,
-  faGit,
-  faGithub,
-  faHtml5,
-  faJava,
-  faJenkins,
-  faJs,
-  faLinux,
-  faNodeJs,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
-import React from "react";
-import { FaBriefcase, FaDatabase, FaFire, FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import { TbBrandFigma } from "react-icons/tb";
-
 export const links = [
   {
     name: "Home",
@@ -75,7 +56,7 @@ export const experiences = [
     location: "Remote",
     period: "Sept 2025 - Nov 2025",
     description:
-      "Developed user interfaces for STAATEN Tech's web applications, improving user experience and engagement.",
+      "Developed 15+ responsive web pages and integrated backend APIs, enhancing the functionality and user experience of STAATEN Tech's web applications.",
   },
 ];
 
