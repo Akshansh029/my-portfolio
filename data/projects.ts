@@ -6,6 +6,7 @@ import terraformAwsInfraMd from "@/content/projects/terraform-aws-infra.md";
 import k8sChatAppMd from "@/content/projects/k8s-chat-app.md";
 import k8sVotingAppMd from "@/content/projects/k8s-voting-app.md";
 import typeflowMd from "@/content/projects/typeflow.md";
+import codeChimeMd from "@/content/projects/codechime.md";
 
 export interface Project {
   id: string;
@@ -66,7 +67,7 @@ export const projects: Project[] = [
     id: "k8s-chat-app",
     title: "Full Stack Chat Application with Kubernetes Deployment",
     description:
-      "Real-time chat application deployed on Kubernetes using React.js frontend, Node.js backend, and MongoDB.",
+      "Real-time chat application deployed on Kubernetes using React.js frontend, Node.js backend, and MongoDB",
     tech: ["React.js", "Node.js", "MongoDB", "Kubernetes", "Docker"],
     image: "/project-images/k8s-chat-app/Chat-app.png",
     github: "https://github.com/Akshansh029/Full-stack-chat-app-K8s",
@@ -76,7 +77,7 @@ export const projects: Project[] = [
     id: "slotwise",
     title: "SlotWise",
     description:
-      "Modern study scheduling and review app with spaced-repetition flashcards for effective learning.",
+      "Modern study scheduling and review app with spaced-repetition flashcards for effective learning",
     tech: ["Next.js", "Tailwind", "TypeScript", "tRPC", "PostgreSQL"],
     image: "/slotwise.png",
     github: "https://github.com/Akshansh029/study-scheduler",
@@ -87,11 +88,22 @@ export const projects: Project[] = [
     id: "travelite",
     title: "Travelite",
     description:
-      "AI-driven platform that customizes trip planning and suggests itineraries based on users' past travel preferences.",
+      "AI-driven platform that customizes trip planning and suggests itineraries based on users' past travel preferences",
     tech: ["Next.js", "Tailwind", "Firebase", "Gemini API", "Python"],
     image: "/travelite.png",
     github: "https://github.com/Akshansh029/travelite",
     content: traveliteMd,
+  },
+  {
+    id: "codechime",
+    title: "CodeChime",
+    description:
+      "A real-time, collaborative code editor where code will be synced across all connected users",
+    tech: ["React.js", "Socket.io", "Express.js", "CodeMirror"],
+    image: "/project-images/codechime/Editor_page.png",
+    github: "https://github.com/Akshansh029/realtime-code-editor",
+    live: "https://realtime-code-editor-backend-n4xl.onrender.com",
+    content: codeChimeMd,
   },
   {
     id: "typeflow",
