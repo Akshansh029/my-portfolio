@@ -2,7 +2,8 @@ import nebuloMd from "@/content/projects/nebulo.md";
 import traveliteMd from "@/content/projects/travelite.md";
 import slotwiseMd from "@/content/projects/slotwise.md";
 import projectManagementMd from "@/content/projects/project-management.md";
-import terraformAwsInfraMd from "@/content/projects/terraformAwsInfra.md";
+import terraformAwsInfraMd from "@/content/projects/terraform-aws-infra.md";
+import k8sChatAppMd from "@/content/projects/k8s-chat-app.md";
 
 export interface Project {
   id: string;
@@ -68,6 +69,16 @@ export const projects: Project[] = [
     image: "/project-images/terraform-aws-infra/2-tier-infra.drawio.png",
     github: "https://github.com/Akshansh029/2-Tier-AWS-Infrastructure-Terraform",
     content: terraformAwsInfraMd,
+  },
+  {
+    id: "k8s-chat-app",
+    title: "Full Stack Chat Application with Kubernetes Deployment",
+    description:
+      "Real-time chat application deployed on Kubernetes using React.js frontend, Node.js backend, and MongoDB.",
+    tech: ["React.js", "Node.js", "MongoDB", "Kubernetes", "Docker"],
+    image: "/project-images/k8s-chat-app/Chat-app.png",
+    github: "https://github.com/Akshansh029/Full-stack-chat-app-K8s",
+    content: k8sChatAppMd,
   },
 ];
 
