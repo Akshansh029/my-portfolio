@@ -67,34 +67,3 @@ Nebulo allows users to analyze GitHub repositories using AI. It supports intelli
 3. Analyze the codebase and ask AI-powered questions
 4. Generate README files automatically
 5. Purchase credits via the billing page if required
-
----
-
-## Project Structure
-
-```text
-nebulo/
-├── prisma/
-│   └── schema.prisma
-├── public/
-├── src/
-│   ├── app/
-│   │   ├── (protected)/
-│   │   ├── api/
-│   │   ├── billing/
-│   │   ├── create/
-│   │   ├── dashboard/
-│   │   ├── qa/
-│   │   └── readme/
-│   ├── components/
-│   ├── hooks/
-│   ├── lib/
-│   ├── server/
-│   ├── styles/
-│   ├── trpc/
-│   └── middleware.ts
-├── env.js
-├── next.config.js
-├── package.json
-└── tsconfig.json
-```

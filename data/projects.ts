@@ -5,6 +5,7 @@ import projectManagementMd from "@/content/projects/project-management.md";
 import terraformAwsInfraMd from "@/content/projects/terraform-aws-infra.md";
 import k8sChatAppMd from "@/content/projects/k8s-chat-app.md";
 import k8sVotingAppMd from "@/content/projects/k8s-voting-app.md";
+import typeflowMd from "@/content/projects/typeflow.md";
 
 export interface Project {
   id: string;
@@ -91,6 +92,17 @@ export const projects: Project[] = [
     image: "/travelite.png",
     github: "https://github.com/Akshansh029/travelite",
     content: traveliteMd,
+  },
+  {
+    id: "typeflow",
+    title: "Typeflow",
+    description:
+      "A sleek, feature-rich typing test application built with Next.js and TypeScript, designed to help users measure and improve their typing speed and accuracy.",
+    tech: ["Next.js", "TypeScript", "PostgreSQL", "NextAuth"],
+    image: "/project-images/typeflow/Homescreen.png",
+    github: "https://github.com/Akshansh029/typeflow",
+    live: "https://type-flow-pied.vercel.app",
+    content: typeflowMd,
   },
 ];
 
