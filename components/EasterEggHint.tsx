@@ -4,7 +4,7 @@ import { Sparkles } from "lucide-react";
 const EasterEggHint = () => {
   return (
     <section className="py-8 md:py-12">
-      <div className="section-container">
+      <div className="section-container hidden sm:block">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

@@ -20,7 +20,7 @@ const HeroSection = () => {
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-glow" />
       <div className="absolute top-1/4 -right-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-glow" />
 
-      <div className="section-container text-center relative z-10">
+      <div className="section-container text-center relative z-10 space-y-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed"
+          className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
         >
           I craft modern web experiences with{" "}
           <span className="text-foreground font-medium">Next.js</span> &{" "}
