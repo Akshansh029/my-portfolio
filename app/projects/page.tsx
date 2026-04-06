@@ -1,11 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import { ArrowLeft, Github, ArrowUpRight } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 import { projects } from "@/data/projects";
-import Navigation from "@/components/Navigation";
 import Link from "next/link";
-import Image from "next/image";
 import ProjectCard from "@/components/ProjectCard";
 
 const Projects = () => {
@@ -28,7 +25,7 @@ const Projects = () => {
             </Link>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              All Projects
+              All {projects.length} Projects
             </h1>
             <p className="text-muted-foreground text-lg mb-12 max-w-2xl">
               A collection of my work, featuring web applications, AI
@@ -44,7 +41,7 @@ const Projects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
               >
-                <ProjectCard key={project.id} project={project}/>
+                <ProjectCard key={project.id} project={project} />
               </motion.article>
             ))}
           </div>

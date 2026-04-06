@@ -4,6 +4,7 @@ import slotwiseMd from "@/content/projects/slotwise.md";
 import projectManagementMd from "@/content/projects/project-management.md";
 import terraformAwsInfraMd from "@/content/projects/terraform-aws-infra.md";
 import k8sChatAppMd from "@/content/projects/k8s-chat-app.md";
+import k8sVotingAppMd from "@/content/projects/k8s-voting-app.md";
 
 export interface Project {
   id: string;
@@ -29,6 +30,27 @@ export const projects: Project[] = [
     content: projectManagementMd,
   },
   {
+    id: "k8s-voting-app",
+    title: "Kubernetes GitOps Voting Application with ArgoCD",
+    description:
+      "Microservices-based voting application deployed on Kubernetes using ArgoCD for GitOps-based continuous delivery.",
+    tech: ["Kubernetes", "Kind", "ArgoCD", "Docker", "AWS", "Ubuntu"],
+    image: "/project-images/k8s-voting-app/architecture_diag.png",
+    github: "https://github.com/Akshansh029/k8s-kind-voting-app",
+    content: k8sVotingAppMd,
+  },
+  {
+    id: "terraform-aws-infra",
+    title: "2-Tier-AWS-Infrastructure-Terraform",
+    description:
+      "Robust 2-tier AWS infrastructure using Terraform as Infrastructure as Code (IaC)",
+    tech: ["Terraform", "AWS", "Bash"],
+    image: "/project-images/terraform-aws-infra/2-tier-infra.drawio.png",
+    github:
+      "https://github.com/Akshansh029/2-Tier-AWS-Infrastructure-Terraform",
+    content: terraformAwsInfraMd,
+  },
+  {
     id: "nebulo",
     title: "Nebulo",
     description:
@@ -38,6 +60,16 @@ export const projects: Project[] = [
     github: "https://github.com/Akshansh029",
     live: "https://nebulo-zeta.vercel.app",
     content: nebuloMd,
+  },
+  {
+    id: "k8s-chat-app",
+    title: "Full Stack Chat Application with Kubernetes Deployment",
+    description:
+      "Real-time chat application deployed on Kubernetes using React.js frontend, Node.js backend, and MongoDB.",
+    tech: ["React.js", "Node.js", "MongoDB", "Kubernetes", "Docker"],
+    image: "/project-images/k8s-chat-app/Chat-app.png",
+    github: "https://github.com/Akshansh029/Full-stack-chat-app-K8s",
+    content: k8sChatAppMd,
   },
   {
     id: "slotwise",
@@ -59,26 +91,6 @@ export const projects: Project[] = [
     image: "/travelite.png",
     github: "https://github.com/Akshansh029/travelite",
     content: traveliteMd,
-  },
-  {
-    id: "terraform-aws-infra",
-    title: "2-Tier-AWS-Infrastructure-Terraform",
-    description:
-      "Robust 2-tier AWS infrastructure using Terraform as Infrastructure as Code (IaC)",
-    tech: ["Terraform", "AWS", "Bash"],
-    image: "/project-images/terraform-aws-infra/2-tier-infra.drawio.png",
-    github: "https://github.com/Akshansh029/2-Tier-AWS-Infrastructure-Terraform",
-    content: terraformAwsInfraMd,
-  },
-  {
-    id: "k8s-chat-app",
-    title: "Full Stack Chat Application with Kubernetes Deployment",
-    description:
-      "Real-time chat application deployed on Kubernetes using React.js frontend, Node.js backend, and MongoDB.",
-    tech: ["React.js", "Node.js", "MongoDB", "Kubernetes", "Docker"],
-    image: "/project-images/k8s-chat-app/Chat-app.png",
-    github: "https://github.com/Akshansh029/Full-stack-chat-app-K8s",
-    content: k8sChatAppMd,
   },
 ];
 
