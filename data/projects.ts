@@ -7,6 +7,7 @@ import k8sChatAppMd from "@/content/projects/k8s-chat-app.md";
 import k8sVotingAppMd from "@/content/projects/k8s-voting-app.md";
 import typeflowMd from "@/content/projects/typeflow.md";
 import codeChimeMd from "@/content/projects/codechime.md";
+import timeCapsuleMd from "@/content/projects/timecapsule.md";
 
 export interface Project {
   id: string;
@@ -21,15 +22,15 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "project-management",
-    title: "Project Management System",
+    id: "time-capsule",
+    title: "Time Capsule",
     description:
-      "A full-stack, production-ready task management platform built for teams",
+      "Time Capsule is a meaningful web application designed to preserve memories and deliver them to your future self or loved ones",
     tech: ["Next.js", "Axios", "Spring Boot", "Spring Data JPA", "PostgreSQL"],
-    image: "/project-management.png",
-    github: "https://github.com/Akshansh029/Task-Management-Platform-Frontend",
-    live: "https://task-management-platform-frontend-five.vercel.app",
-    content: projectManagementMd,
+    image: "/project-images/timecapsule/dashboard.png",
+    github: "https://github.com/Akshansh029/time-capsule",
+    live: "https://timecapsule.akshanshsingh.com",
+    content: timeCapsuleMd,
   },
   {
     id: "k8s-voting-app",
@@ -53,15 +54,15 @@ export const projects: Project[] = [
     content: terraformAwsInfraMd,
   },
   {
-    id: "nebulo",
-    title: "Nebulo",
+    id: "project-management",
+    title: "Project Management System",
     description:
-      "Web application for analyzing GitHub codebases with AI-powered Q&A and automated README generation.",
-    tech: ["Next.js", "TypeScript", "tRPC", "PostgreSQL", "Gemini API"],
-    image: "/nebulo.png",
-    github: "https://github.com/Akshansh029",
-    live: "https://nebulo-zeta.vercel.app",
-    content: nebuloMd,
+      "A full-stack, production-ready task management platform built for teams",
+    tech: ["Next.js", "Axios", "Spring Boot", "Spring Data JPA", "PostgreSQL"],
+    image: "/project-management.png",
+    github: "https://github.com/Akshansh029/Task-Management-Platform-Frontend",
+    live: "https://projectmanagement.akshanshsingh.com",
+    content: projectManagementMd,
   },
   {
     id: "k8s-chat-app",
@@ -81,18 +82,8 @@ export const projects: Project[] = [
     tech: ["Next.js", "Tailwind", "TypeScript", "tRPC", "PostgreSQL"],
     image: "/slotwise.png",
     github: "https://github.com/Akshansh029/study-scheduler",
-    live: "https://slotwise-self.vercel.app",
+    live: "https://slotwise.akshanshsingh.com",
     content: slotwiseMd,
-  },
-  {
-    id: "travelite",
-    title: "Travelite",
-    description:
-      "AI-driven platform that customizes trip planning and suggests itineraries based on users' past travel preferences",
-    tech: ["Next.js", "Tailwind", "Firebase", "Gemini API", "Python"],
-    image: "/travelite.png",
-    github: "https://github.com/Akshansh029/travelite",
-    content: traveliteMd,
   },
   {
     id: "codechime",
@@ -102,7 +93,7 @@ export const projects: Project[] = [
     tech: ["React.js", "Socket.io", "Express.js", "CodeMirror"],
     image: "/project-images/codechime/Editor_page.png",
     github: "https://github.com/Akshansh029/realtime-code-editor",
-    live: "https://realtime-code-editor-backend-n4xl.onrender.com",
+    live: "https://codechime.akshanshsingh.com",
     content: codeChimeMd,
   },
   {
@@ -113,8 +104,29 @@ export const projects: Project[] = [
     tech: ["Next.js", "TypeScript", "PostgreSQL", "NextAuth"],
     image: "/project-images/typeflow/Homescreen.png",
     github: "https://github.com/Akshansh029/typeflow",
-    live: "https://type-flow-pied.vercel.app",
+    live: "https://typeflow.akshanshsingh.com",
     content: typeflowMd,
+  },
+  {
+    id: "travelite",
+    title: "Travelite",
+    description:
+      "AI-driven platform that customizes trip planning and suggests itineraries based on user's past travel preferences",
+    tech: ["Next.js", "Tailwind", "Firebase", "Gemini API", "Python"],
+    image: "/travelite.png",
+    github: "https://github.com/Akshansh029/travelite",
+    content: traveliteMd,
+  },
+  {
+    id: "nebulo",
+    title: "Nebulo",
+    description:
+      "Web application for analyzing GitHub codebases with AI-powered Q&A and automated README generation.",
+    tech: ["Next.js", "TypeScript", "tRPC", "PostgreSQL", "Gemini API"],
+    image: "/project-images/nebulo/dashboard.png",
+    github: "https://github.com/Akshansh029",
+    live: "https://nebulo.akshanshsingh.com",
+    content: nebuloMd,
   },
 ];
 

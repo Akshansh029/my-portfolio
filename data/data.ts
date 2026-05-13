@@ -67,7 +67,7 @@ export const skillCategories = [
   },
   {
     title: "Frameworks",
-    skills: ["React", "Next.js", "Node.js", "Express", "Vite"],
+    skills: ["Spring Boot", "React", "Next.js", "Node.js", "Express", "Vite"],
   },
   {
     title: "Databases & ORMs",
@@ -77,6 +77,7 @@ export const skillCategories = [
       "MySQL",
       "Firebase",
       "Supabase",
+      "Hibernate",
       "Prisma",
     ],
   },

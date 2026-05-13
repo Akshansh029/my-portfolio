@@ -17,14 +17,14 @@ const Index = () => {
         `Glad you landed on my portfolio and decided to look around.\n\n` +
         `Built by Akshansh Singh\n` +
         `Stack: Next.js • TypeScript • Tailwind • Framer Motion`,
-      "color: #7de8df; font-size: 14px; font-family: monospace;"
+      "color: #7de8df; font-size: 14px; font-family: monospace;",
     );
   }, []);
 
   useKonamiCode();
 
   return (
-    <div className="min-h-screen bg-background noise-bg">
+    <div className="min-h-screen bg-background">
       <main>
         <HeroSection />
         <AboutSection />

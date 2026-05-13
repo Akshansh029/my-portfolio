@@ -22,7 +22,7 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background noise-bg">
+    <div className="min-h-screen bg-background">
       <Navigation />
       <main className="pt-24 pb-16">
         <article className="section-container">
@@ -156,24 +156,18 @@ const ProjectDetail = () => {
                     </strong>
                   ),
                   table: ({ children }) => (
-                      <div className="w-full overflow-x-auto mb-6">
-                        <table className="w-full border border-border rounded-lg">
-                          {children}
-                        </table>
-                      </div>
-                    ),
+                    <div className="w-full overflow-x-auto mb-6">
+                      <table className="w-full border border-border rounded-lg">
+                        {children}
+                      </table>
+                    </div>
+                  ),
                   thead: ({ children }) => (
-                    <thead className="bg-muted">
-                      {children}
-                    </thead>
+                    <thead className="bg-muted">{children}</thead>
                   ),
-                  tbody: ({ children }) => (
-                    <tbody>{children}</tbody>
-                  ),
+                  tbody: ({ children }) => <tbody>{children}</tbody>,
                   tr: ({ children }) => (
-                    <tr className="border-b border-border">
-                      {children}
-                    </tr>
+                    <tr className="border-b border-border">{children}</tr>
                   ),
                   th: ({ children }) => (
                     <th className="px-4 py-2 text-left font-semibold text-foreground">

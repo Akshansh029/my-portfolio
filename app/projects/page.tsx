@@ -7,7 +7,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 const Projects = () => {
   return (
-    <div className="min-h-screen bg-background noise-bg">
+    <div className="min-h-screen bg-background">
       {/* <Navigation /> */}
       <main className="pt-24 pb-16">
         <div className="section-container">

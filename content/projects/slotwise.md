@@ -23,21 +23,21 @@ SlotWise is a modern study scheduling and review application that helps students
 
 ## Screenshots
 
-
 Schedule page
-  ![Schedule page](/project-images/slotwise/Schedule_page.png)
+
+![Schedule page](/project-images/slotwise/Schedule_page.png)
 
 Subjects page
-  ![Subjects page](/project-images/slotwise/Subject_page.png)
+![Subjects page](/project-images/slotwise/Subject_page.png)
 
 Sessions page
-  ![Sessions page](/project-images/slotwise/Sessions_page.png)
+![Sessions page](/project-images/slotwise/Sessions_page.png)
 
 Ongoing session
-  ![Ongoing session](/project-images/slotwise/Ongoing_session.png)
+![Ongoing session](/project-images/slotwise/Ongoing_session.png)
 
 Review page
-  ![Review page](/project-images/slotwise/Review_page.png)
+![Review page](/project-images/slotwise/Review_page.png)
 
 ## Usage
 
@@ -70,8 +70,8 @@ Review page
 
 ### 5. **View Progress & Analytics**
 
-  - Head to **Dashboard / Profile** to see:
-  - Total study time, session counts, and trends over time.
-  - Use analytics to spot weak topics and adjust schedules.
+- Head to **Dashboard / Profile** to see:
+- Total study time, session counts, and trends over time.
+- Use analytics to spot weak topics and adjust schedules.
 
 ![Dashboard](/project-images/slotwise/Dashboard.png)

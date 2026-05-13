@@ -8,11 +8,10 @@ import { Toaster } from "@/components/ui/toaster";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata = {
-  title: "Akshansh | Personal Portfolio",
-  description: "My personal portfolio",
+  title: "Akshansh Singh - Software Developer",
+  description:
+    "I write code, ship products, and break things in staging. Welcome to my corner of the internet.",
 };
 
 export default function RootLayout({
