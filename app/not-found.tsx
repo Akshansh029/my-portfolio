@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const notFound = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">
@@ -6,9 +8,9 @@ const notFound = () => {
         <p className="mb-4 text-xl text-muted-foreground">
           Oops! You landed on the wrong page.
         </p>
-        <a href="/" className="text-primary underline hover:text-primary/90">
+        <Link href="/" className="text-primary underline hover:text-primary/90">
           Return to Home
-        </a>
+        </Link>
       </div>
     </div>
   );

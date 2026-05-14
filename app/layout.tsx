@@ -14,6 +14,8 @@ export const metadata = {
     "I write code, ship products, and break things in staging. Welcome to my corner of the internet.",
 };
 
+import { TooltipProvider } from "@/components/ui/tooltip";
+
 export default function RootLayout({
   children,
 }: {
@@ -39,11 +41,13 @@ export default function RootLayout({
       <body>
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            <Navigation />
-            {children}
-            <SpeedInsights />
-            <Footer />
-            <Toaster />
+            <TooltipProvider>
+              <Navigation />
+              {children}
+              <SpeedInsights />
+              <Footer />
+              <Toaster />
+            </TooltipProvider>
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>

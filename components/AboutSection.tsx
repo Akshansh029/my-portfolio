@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink } from "lucide-react";
+import { GitHubContributions } from "./github-contributions";
 
 const AboutSection = () => {
   const ref = useRef(null);
@@ -69,6 +70,11 @@ const AboutSection = () => {
             <ExternalLink className="h-4 w-4" />
           </motion.a>
         </motion.div>
+      </div>
+
+      <div className="max-w-3xl mx-auto mt-20">
+        <h3 className="text-2xl font-bold mb-8">GitHub Activity</h3>
+        <GitHubContributions />
       </div>
     </section>
   );
