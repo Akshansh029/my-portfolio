@@ -28,7 +28,7 @@ const HeroSection = () => {
           className="mb-6"
         >
           <span className="text-muted-foreground font-mono text-base tracking-wider">
-            Full-Stack Developer
+            Software Developer
           </span>
         </motion.div>
 
@@ -78,7 +78,7 @@ const HeroSection = () => {
             asChild
           >
             <Link
-              href="/full-stack-resume.pdf"
+              href="/Software-dev-resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
