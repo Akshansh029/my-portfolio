@@ -58,7 +58,7 @@ const AboutSection = () => {
           </p>
 
           <motion.a
-            href="https://akshansh29.hashnode.dev/"
+            href="https://blog.akshanshsingh.com"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-primary hover:underline"
@@ -66,7 +66,7 @@ const AboutSection = () => {
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            Read my blogs on Hashnode
+            Read my blogs here
             <ExternalLink className="h-4 w-4" />
           </motion.a>
         </motion.div>
