@@ -32,13 +32,9 @@ const AboutSection = () => {
           className="space-y-6 text-muted-foreground text-lg leading-relaxed"
         >
           <p>
-            I'm a final year{" "}
-            <span className="text-foreground">
-              Electrical and Electronics Engineering
-            </span>{" "}
-            student with a passion for{" "}
-            <span className="text-foreground">web development</span> and{" "}
-            <span className="text-foreground">software engineering</span>.
+            I'm a Electrical and Electronics Engineering undergraduate with a
+            passion for <span className="text-foreground">web development</span>{" "}
+            and <span className="text-foreground">software engineering</span>.
           </p>
 
           <p>
@@ -47,7 +43,7 @@ const AboutSection = () => {
             <span className="text-primary">TypeScript</span>,{" "}
             <span className="text-primary">Express.js</span>, and various
             databases. Currently deepening my knowledge in{" "}
-            <span className="text-foreground">Backend Developement</span> with
+            <span className="text-foreground">Backend Development</span> with
             the help of <span className="text-primary">Spring Boot</span> while
             exploring <span className="text-foreground">DevOps</span>.
           </p>

@@ -1,5 +1,3 @@
-# Collaborative Code Editor
-
 A real-time, collaborative code editor built using React, TailwindCSS, Socket.io, NodeJS/ExpressJS, and CodeMirror (v5). This application allows multiple users to collaborate on code in real-time. Users can join a room by sharing a unique room ID, where their code will be synced across all connected users. It supports multiple programming languages, syntax highlighting, and a variety of themes and font selectors.
 
 ## Features

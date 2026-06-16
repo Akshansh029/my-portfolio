@@ -1,5 +1,3 @@
-# Nebulo: GitHub Codebase Analyzer
-
 Nebulo is a web application designed to analyze GitHub codebases. It provides repository analysis, AI-powered question answering, and automated README generation. Users can purchase credits to unlock advanced features.
 
 ---

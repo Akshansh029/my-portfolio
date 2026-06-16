@@ -2,10 +2,12 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const navItems = [
   { label: "Home", href: "/#hero" },
   { label: "About", href: "/#about" },
+  { label: "Blog", href: "https://blog.akshanshsingh.com" },
   { label: "Projects", href: "/#projects" },
   { label: "Skills", href: "/#skills" },
   { label: "Experience", href: "/#experience" },
@@ -15,15 +17,50 @@ const navItems = [
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
+
+      if (pathname !== "/") {
+        setActiveSection("");
+        return;
+      }
+
+      const sectionElements = navItems
+        .filter((item) => item.href.startsWith("/#"))
+        .map((item) => ({
+          id: item.href,
+          element: document.getElementById(item.href.substring(2)),
+        }))
+        .filter((item) => item.element !== null);
+
+      let currentActive = "";
+      for (let i = sectionElements.length - 1; i >= 0; i--) {
+        const { id, element } = sectionElements[i];
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 150) {
+            currentActive = id;
+            break;
+          }
+        }
+      }
+
+      if (currentActive) {
+        setActiveSection(currentActive);
+      } else if (window.scrollY < 100) {
+        setActiveSection("/#hero");
+      }
     };
+
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [pathname]);
 
   // Close mobile menu on resize to desktop
   useEffect(() => {
@@ -63,7 +100,7 @@ const Navigation = () => {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.5 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 section-container ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-4 md:mx-auto md:px-8 max-w-3xl ${
           scrolled ? "py-3 md:py-4" : "py-4 md:py-6"
         }`}
       >
@@ -79,16 +116,20 @@ const Navigation = () => {
             </a>
 
             {/* Desktop Navigation */}
-            <ul className="hidden md:flex items-center gap-1 md:gap-2">
+            <ul className="hidden md:flex items-center gap-1 md:gap-5">
               {navItems.map((item, index) => (
                 <li key={item.label}>
                   <a
                     href={item.href}
-                    className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-lg hover:bg-secondary/50"
+                    className={`px-3 py-2 text-sm font-medium transition-colors rounded-lg hover:bg-secondary/50 ${
+                      activeSection === item.href
+                        ? "text-primary"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
                   >
-                    <span className="text-primary font-mono mr-1">
+                    {/* <span className="text-primary font-mono mr-1">
                       0{index + 1}.
-                    </span>
+                    </span> */}
                     {item.label}
                   </a>
                 </li>
@@ -146,7 +187,11 @@ const Navigation = () => {
                   >
                     <button
                       onClick={() => handleNavClick(item.href)}
-                      className="flex flex-col items-center gap-1 text-2xl font-medium text-muted-foreground hover:text-foreground transition-colors"
+                      className={`flex flex-col items-center gap-1 text-2xl font-medium transition-colors ${
+                        activeSection === item.href
+                          ? "text-primary"
+                          : "text-muted-foreground hover:text-foreground"
+                      }`}
                     >
                       <span className="text-primary font-mono text-sm">
                         0{index + 1}.

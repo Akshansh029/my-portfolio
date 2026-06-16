@@ -1,5 +1,3 @@
-# Full Stack Chat Application with Kubernetes Deployment
-
 This project demonstrates a complete three-tier full-stack chat application deployed on Kubernetes using Minikube. The application showcases modern DevOps practices including containerization, orchestration, persistent storage, and ingress configuration for a production-ready deployment architecture.
 
 ### Project Objectives
@@ -64,7 +62,6 @@ The chat application follows a modern three-tier architecture:
 - **Storage Persistence**: 100% data retention across pod restarts
 - **Scalability**: Horizontal scaling ready with replica sets
 
-
 ## Future Enhancements
 
 - Implement Horizontal Pod Autoscaling (HPA)
@@ -98,4 +95,3 @@ The chat application follows a modern three-tier architecture:
 - **Troubleshooting**: Log analysis, debugging containerized applications
 - **Performance Optimization**: Resource allocation, scaling strategies
 - **Networking**: Service mesh, ingress configuration, DNS management
-

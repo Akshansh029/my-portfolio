@@ -1,5 +1,3 @@
-# Travelite: AI Virtual Tour Guide & Trip Planner
-
 Travelite is an AI-powered virtual tour guide and trip planning platform that provides users with customized trips based on their preferences. It also allows users to view past trips and suggests new trips using an ML model that analyzes previously created trips.
 
 ![Landing page](/project-images/travelite/page.png)

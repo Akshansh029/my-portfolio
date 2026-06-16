@@ -1,5 +1,3 @@
-# Task Management & Collaboration Platform
-
 A full-stack, production-ready task management platform built for teams — featuring a RESTful Spring Boot backend and a modern Next.js frontend. It enables teams to organize projects, track tasks across statuses and priorities, and collaborate through threaded comments and role-based access.
 
 **Frontend Repo:** [Task-Management-Platform-Frontend](https://github.com/Akshansh029/Task-Management-Platform-Frontend)

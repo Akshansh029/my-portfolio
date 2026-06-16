@@ -1,5 +1,3 @@
-# TypeFlow
-
 A sleek, feature-rich typing test application built with Next.js and TypeScript, designed to help users measure and improve their typing speed and accuracy.
 
 ## Features

@@ -8,6 +8,7 @@ import k8sVotingAppMd from "@/content/projects/k8s-voting-app.md";
 import typeflowMd from "@/content/projects/typeflow.md";
 import codeChimeMd from "@/content/projects/codechime.md";
 import timeCapsuleMd from "@/content/projects/timecapsule.md";
+import chessWebMd from "@/content/projects/chessweb.md";
 
 export interface Project {
   id: string;
@@ -21,6 +22,17 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: "chess-web",
+    title: "ChessWeb",
+    description:
+      "ChessWeb is a real-time, multiplayer chess platform that provides a clean, distraction-free environment for mastering the game of chess.",
+    tech: ["Next.js", "TypeScript", "Spring Boot", "WebSockets", "PostgreSQL"],
+    image: "/project-images/chessweb/Mid_game.png",
+    github: "https://github.com/Akshansh029/chess-web",
+    live: "https://chessweb.akshanshsingh.com",
+    content: chessWebMd,
+  },
   {
     id: "time-capsule",
     title: "Time Capsule",

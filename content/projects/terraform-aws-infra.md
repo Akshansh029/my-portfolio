@@ -1,5 +1,3 @@
-# 2-Tier AWS Infrastructure with Terraform
-
 This project demonstrates the implementation of a robust 2-tier AWS infrastructure using Terraform as Infrastructure as Code (IaC). The architecture separates the web tier (presentation layer) from the database tier (data layer), providing a scalable, secure, and maintainable cloud solution.
 
 The infrastructure is designed to host web applications with high availability, automatic scaling, and secure database connectivity. All resources are provisioned and managed through Terraform, ensuring consistent deployments and easy infrastructure management.

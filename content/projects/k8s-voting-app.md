@@ -1,5 +1,3 @@
-# Kubernetes GitOps Voting Application with ArgoCD
-
 This project demonstrates a complete GitOps implementation using Kubernetes, ArgoCD, and AWS EC2. I've deployed a microservices-based voting application that showcases modern DevOps practices including infrastructure as code, continuous deployment, and automated application management.
 
 ## Architecture Overview

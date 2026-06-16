@@ -40,7 +40,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         <div className="flex gap-3">
           <Link
             href={`/projects/${project.id}`}
-            className="py-3 px-5 rounded-full hover:bg-white/70 transition-colors border-[1px] border-border bg-white text-secondary font-semibold text-sm"
+            className="py-3 px-5 rounded-full hover:bg-white/70 transition-colors border-[1px] border-border bg-white text-secondary font-semibold text-xs"
           >
             More Details
           </Link>
@@ -49,9 +49,9 @@ const ProjectCard = ({ project }: { project: Project }) => {
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
-            className="py-3 px-5 flex items-center gap-2 rounded-full hover:bg-primary/10 transition-colors border-[1px] border-border font-semibold text-sm"
+            className="py-3 px-5 flex items-center gap-2 rounded-full hover:bg-primary/10 transition-colors border-[1px] border-border font-semibold text-xs"
           >
-            <Github className="h-5 w-5" />
+            <Github className="h-4 w-4" />
             <span className="hidden md:block">GitHub</span>
           </Link>
           {project.live && (
@@ -59,9 +59,9 @@ const ProjectCard = ({ project }: { project: Project }) => {
               href={project.live}
               target="_blank"
               rel="noopener noreferrer"
-              className="py-3 px-5 flex items-center gap-2 rounded-full hover:bg-primary/10 transition-colors border-[1px] border-border font-semibold text-sm"
+              className="py-3 px-5 flex items-center gap-2 rounded-full hover:bg-primary/10 transition-colors border-[1px] border-border font-semibold text-xs"
             >
-              <ArrowUpRight className="h-5 w-5" />
+              <ArrowUpRight className="h-4 w-4" />
               <span className="hidden md:block">Live Site</span>
             </Link>
           )}
